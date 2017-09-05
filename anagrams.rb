@@ -8,14 +8,16 @@ def anagrams?(string1, string2)
 	word1 = string1.downcase.split("")
 	word2 = string2.downcase.split("")
 	if word1.sort == word2.sort
-		return true
+		true
 	else
-		return false
+		 false
 	end	
 end
 
-p anagrams?('melon', 'lemon')
 
-# def method_name
+ def anagrams?(string1, string2)
 	
-# end
+ end
+
+ def anagram_canonical_form(word)
+ end
