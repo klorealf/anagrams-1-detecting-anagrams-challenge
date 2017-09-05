@@ -16,8 +16,9 @@ end
 
 
  def anagrams?(string1, string2)
-	
+	 anagram_canonical_form(string1) == anagram_canonical_form(string2)
  end
 
  def anagram_canonical_form(word)
+ 	word.downcase.split('').sort
  end
