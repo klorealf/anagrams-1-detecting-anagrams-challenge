@@ -4,12 +4,10 @@
 # If the two variables are equal to each other when the split strings are split, then return true
 # Else return false
 
-def anagrams?(string_1, string_2)
-  word_1 = string_1.downcase.split("")
-  word_2 = string_2.downcase.split("")
-  if word_1.sort == word_2.sort
-    return true
-  else
-    return false
-  end
+def anagrams?(word, possible_anagram)
+  anagram_canonical_form(word) == anagram_canonical_form(possible_anagram)
+end
+
+def anagram_canonical_form(word)
+  word.downcase.split("").sort
 end
